@@ -1,15 +1,8 @@
 angular.module('starter.controllers', [])
 
-<<<<<<< HEAD
 .controller('PoketesCtrl', function($scope, poketes) {
   $scope.poketes = poketes;
   console.log("poketes", poketes);
-=======
-.controller('TrendsCtrl', function($scope, trends) {
-  $scope.trends = trends;
-  console.log("trends", trends);
->>>>>>> 73a204264d468cd0d58cbee60b2ca56b6ba79447
-
 })
 .controller('StockDetailCtrl', function($scope, trend) {
   $scope.trend = trend;
@@ -21,12 +14,9 @@ angular.module('starter.controllers', [])
 })
 .controller('AccountCtrl', function($scope) {
 
-<<<<<<< HEAD
-=======
 })
 .controller('QrreadCtrl', function($scope) {
   console.log("Qrread", trend);
->>>>>>> 73a204264d468cd0d58cbee60b2ca56b6ba79447
 })
 
 /*
