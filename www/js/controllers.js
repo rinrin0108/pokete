@@ -17,7 +17,10 @@ angular.module('starter.controllers', [])
 
 })
 .controller('QrreadCtrl', function($scope) {
-  console.log("Qrread", trend);
+
+})
+.controller('QrreadSampleCtrl', function($scope) {
+
 })
 
 /*
