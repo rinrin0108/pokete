@@ -1,9 +1,8 @@
 angular.module('starter.controllers', [])
 
-.controller('TrendsCtrl', function($scope, trends) {
-  $scope.trends = trends;
-  console.log("trends", trends);
-  
+.controller('PoketesCtrl', function($scope, poketes) {
+  $scope.poketes = poketes;
+  console.log("poketes", poketes);
 })
 .controller('StockDetailCtrl', function($scope, trend) {
   $scope.trend = trend;
@@ -11,9 +10,24 @@ angular.module('starter.controllers', [])
 
 })
 .controller('NewsCtrl', function($scope) {
-  
+
 })
 .controller('AccountCtrl', function($scope) {
+
+})
+.controller('QrreadCtrl', function($scope) {
+
+})
+.controller('QrreadSampleCtrl', function($scope) {
+  console.log("Qrread", trend);
+})
+.controller('ManageAccountCtrl', function($scope) {
+  
+})
+.controller('ManagePasswordCtrl', function($scope) {
+  
+})
+.controller('ManageSignCtrl', function($scope) {
   
 })
 

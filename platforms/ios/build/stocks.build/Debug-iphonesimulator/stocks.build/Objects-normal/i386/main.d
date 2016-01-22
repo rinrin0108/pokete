@@ -1,1 +1,2 @@
-dependencies: /Users/atsushi/stocks/stocks/platforms/ios/stocks/main.m
+dependencies: \
+  /Users/atsushi/stocks/pokete/pokete/platforms/ios/stocks/main.m

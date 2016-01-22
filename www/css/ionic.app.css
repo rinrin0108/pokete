@@ -9740,6 +9740,13 @@ a.button {
 .unenergized {
   color: #999; }
 
+.background, .background .pane, .background .item, .background .item-complex .item-content {
+  background-color: #333; }
+
+.pokete-icon,
+.pokete-icon:before {
+  color: red; }
+
 .pokete-card {
   background-image: url("../img/paper.jpg");
   padding: 10px; }
@@ -9756,8 +9763,11 @@ a.button {
 .pokete-price {
   width: 100%;
   text-align: center;
+  font-family: serif;
   font-weight: bold;
+  text-decoration: underline;
   font-size: 2.8em;
+  letter-spacing: 0.3em;
   margin-top: 30px;
   margin-bottom: 10px; }
 

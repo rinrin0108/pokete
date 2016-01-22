@@ -3,19 +3,19 @@ angular.module('starter.services', [])
 
   var poketes = [{
     id: "0102345",
-    price: 10000,
+    price: "10,000",
     password: "pass",
     date: "2016/01/23",
     limit: "2016/03/31"
   }, {
     id: "0102449",
-    price: 20000,
+    price: "20,000",
     password: "pass",
     date: "2016/01/24",
     limit: "2016/02/14"
   }, {
     id: "0104410",
-    price: 30000,
+    price: "30,000",
     password: "pass",
     date: "2016/01/26",
     limit: "2016/05/01"

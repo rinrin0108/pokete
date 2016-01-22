@@ -9740,19 +9740,58 @@ a.button {
 .unenergized {
   color: #999; }
 
-.trend-item {
-  padding: 0;
-  height: 200px; }
-  .trend-item .trend-name {
-    font-size: 0.8rem; }
-  .trend-item .row {
-    padding-left: 5px;
-    padding-right: 5px; }
-  .trend-item .trend-actions {
-    padding: 0; }
-    .trend-item .trend-actions .trend-action {
-      text-align: center; }
-    .trend-item .trend-actions .trend-action-icon {
-      font-size: 1.5em; }
-    .trend-item .trend-actions .trend-action-number {
-      font-size: 0.8em; }
+.background, .background .pane, .background .item, .background .item-complex .item-content {
+  background-color: #333; }
+
+.pokete-icon,
+.pokete-icon:before {
+  color: red; }
+
+.pokete-card {
+  background-image: url("../img/paper.jpg");
+  padding: 10px; }
+
+.pokete-no {
+  font-weight: bold; }
+
+.pokete-title {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8em; }
+
+.pokete-price {
+  width: 100%;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 2.8em;
+  letter-spacing: 0.3em;
+  margin-top: 30px;
+  margin-bottom: 10px; }
+
+.pokete-date {
+  width: 100%;
+  text-align: right; }
+
+.pokete-limit {
+  width: 100%;
+  text-align: right; }
+
+.pokete-qr {
+  height: 100px;
+  width: auto;
+  text-align: right; }
+
+.pokete-sign {
+  height: 60px;
+  width: auto;
+  margin-left: 60px;
+  text-align: right; }
+
+.pokete-surugalogo {
+  height: 60px;
+  width: auto;
+  margin-left: 20px;
+  text-align: right; }
