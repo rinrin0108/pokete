@@ -115,6 +115,20 @@ angular.module('starter.services', [])
     ]
   }];
 
+  var poketes = [{
+    id: 0,
+    price: 10000,
+    password: "pass"
+  }, {
+    id: 1,
+    price: 20000,
+    password: "pass"
+  }, {
+    id: 2,
+    price: 30000,
+    password: "pass"
+  }];
+
   return {
     all: function() {
       return stocks;
