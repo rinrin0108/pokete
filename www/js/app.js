@@ -44,17 +44,17 @@ angular.module('starter', [
     templateUrl: 'templates/tabs.html'
   })
 
-  .state('tab.trends', {
-    url: '/trends',
+  .state('tab.poketes', {
+    url: '/poketes',
     views: {
-      'tab-trends': {
-        templateUrl: 'templates/tab-trends.html',
-        controller: 'TrendsCtrl'
+      'tab-poketes': {
+        templateUrl: 'templates/tab-poketes.html',
+        controller: 'PoketesCtrl'
       }
     },
     resolve: {
-      trends: function(Trend) {
-        return Trend.all();
+      poketes: function(Pokete) {
+        return Pokete.all();
       }
     }
   })
@@ -97,6 +97,6 @@ angular.module('starter', [
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/trends');
+  $urlRouterProvider.otherwise('/tab/poketes');
 
 });

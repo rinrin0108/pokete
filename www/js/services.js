@@ -1,119 +1,5 @@
 angular.module('starter.services', [])
-.factory('Trend', function() {
-
-  var stocks = [{
-    id: 0,
-    name: '株式会社野村総合研究所',
-    image: 'img/ben.png',
-    price: 4260.00,
-    rate: 5,
-    holders: 100,
-    wants: 1000,
-    comments: [
-      {
-        date: '201701051200',
-        user: {
-          name: "Atsushi Hayashida",
-          image: "img/ben.png"
-        },
-        rate: 5,
-        comment: 'I like this company!'
-      },
-      {
-        date: '201701051300',
-        user: {
-          name: "Atsushi Hayashida",
-          image: "img/ben.png"
-        },
-        rate: 5,
-        comment: 'me too!'
-      }
-    ]
-  }, {
-    id: 1,
-    name: 'コカ・コーライーストジャパン（株）',
-    image: 'img/ben.png',
-    price: 1832.00,
-    rate: 4,
-    holders: 100,
-    wants: 1000,
-    comments: [
-      {
-        date: '201701051200',
-        user: {
-          name: "Atsushi Hayashida",
-          image: "img/ben.png"
-        },
-        rate: 5,
-        comment: 'I like Coke!'
-      },
-      {
-        date: '201701051300',
-        user: {
-          name: "Atsushi Hayashida",
-          image: "img/ben.png"
-        },
-        rate: 3,
-        comment: 'I hate...'
-      }
-    ]
-  }, {
-    id: 2,
-    name: '森永製菓（株）',
-    image: 'img/ben.png',
-    price: 635.00,
-    rate: 4,
-    holders: 100,
-    wants: 1000,
-    comments: [
-      {
-        date: '201701051200',
-        user: {
-          name: "Atsushi Hayashida",
-          image: "img/ben.png"
-        },
-        rate: 5,
-        comment: 'I like this company!'
-      },
-      {
-        date: '201701051300',
-        user: {
-          name: "Atsushi Hayashida",
-          image: "img/ben.png"
-        },
-        rate: 5,
-        comment: 'me too!'
-      }
-    ]
-  }, {
-    id: 3,
-    name: '東芝',
-    image: 'img/ben.png',
-    price: 236.30,
-    rate: 3,
-    holders: 100,
-    wants: 1000,
-    comments: [
-      {
-        date: '201701051200',
-        user: {
-          name: "Atsushi Hayashida",
-          image: "img/ben.png"
-        },
-        rate: 2,
-        comment: 'I hate this company!'
-      },
-      {
-        date: '201701051300',
-        user: {
-          name: "Atsushi Hayashida",
-          image: "img/ben.png"
-        },
-        rate: 4,
-        comment: 'Japanese big company is phenix'
-      }
-    ]
-  }];
+.factory('Pokete', function() {
 
   var poketes = [{
     id: 0,
@@ -131,10 +17,10 @@ angular.module('starter.services', [])
 
   return {
     all: function() {
-      return stocks;
+      return poketes;
     },
     get: function(id) {
-      return stocks.filter(function(stock) { return stock.id + '' === id; })[0];
+      return poketes.filter(function(pokete) { return pokete.id + '' === id; })[0];
     }
   };
 })
