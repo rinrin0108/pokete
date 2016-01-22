@@ -1,0 +1,22 @@
+<div class="pokete-card">
+  <div class="pokete-id">No.{{pokete.id}}</div>
+  <div class="pokete-title">約束手形</div>
+  <div class="pokete-price">
+    <div class="row">
+      <div class="col-20"></div>
+      <div style="text-align:right" class="col-20">¥</div>
+      <div class="col-50">
+        <div style="width:65%; margin-top:-10px;" class="item item-input">
+          <input class="text-center" type="text" placeholder="支払い金額を入力">
+        </div>
+      </div>
+      <div class="col-10"></div>
+    </div>
+  </div>
+  <div class="pokete-date" ng-controller="AddPoketeCtrl">発行日 {{date}}</div>
+  <div class="pokete-limit" ng-controller="AddPoketeCtrl">受取期限 {{delidate}}</div>
+  <img class="pokete-qr" src="img/qr.gif">
+  <img class="pokete-sign" src="img/sign.png">
+  <img class="pokete-surugalogo" src="img/surugalogo.png">
+
+</div>
