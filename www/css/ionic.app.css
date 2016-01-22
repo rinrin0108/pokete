@@ -9779,19 +9779,26 @@ a.button {
   width: 100%;
   text-align: right; }
 
+.pokete-from {
+  position: absolute;
+  margin-left: 175px; }
+
 .pokete-qr {
   height: 100px;
   width: auto;
   text-align: right; }
 
 .pokete-sign {
-  height: 60px;
+  position: absolute;
+  height: 70px;
   width: auto;
-  margin-left: 60px;
+  margin-left: 120px;
+  margin-bottom: 30px;
   text-align: right; }
 
 .pokete-surugalogo {
-  height: 60px;
+  height: 50px;
   width: auto;
-  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 300px;
   text-align: right; }
