@@ -16,6 +16,15 @@ angular.module('starter.controllers', [])
 .controller('AccountCtrl', function($scope) {
   
 })
+.controller('ManageAccountCtrl', function($scope) {
+  
+})
+.controller('ManagePasswordCtrl', function($scope) {
+  
+})
+.controller('ManageSignCtrl', function($scope) {
+  
+})
 
 /*
 .controller('DashCtrl', function($scope) {})

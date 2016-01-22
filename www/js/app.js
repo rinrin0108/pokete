@@ -93,10 +93,35 @@ angular.module('starter', [
       }
     }
   })
-
-  ;
+  .state('tab.manage-account', {
+    url: '/manage-account',
+    views: {
+      'tab-manage-account': {
+        templateUrl: 'templates/tab-manage-account.html',
+        controller: 'ManageAccountCtrl'
+      }
+    }
+  })
+  .state('tab.manage-password', {
+    url: '/manage-password',
+    views: {
+      'tab-manage-password': {
+        templateUrl: 'templates/tab-manage-password.html',
+        controller: 'ManagePasswordCtrl'
+      }
+    }
+  })
+  .state('tab.manage-sign', {
+    url: '/manage-sign',
+    views: {
+      'tab-manage-sign': {
+        templateUrl: 'templates/tab-manage-sign.html',
+        controller: 'ManageSignCtrl'
+      }
+    }
+  })
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/trends');
+  $urlRouterProvider.otherwise('/tab/account');
 
 });
