@@ -94,6 +94,16 @@ angular.module('starter', [
     }
   })
 
+  .state('tab.qrread', {
+    url: '/qrread',
+    views: {
+      'tab-qrread': {
+        templateUrl: 'templates/tab-qrread.html',
+        controller: 'QrreadCtrl'
+      }
+    }
+  })
+
   ;
 
   // if none of the above states are matched, use this as the fallback
