@@ -2,17 +2,23 @@ angular.module('starter.services', [])
 .factory('Pokete', function() {
 
   var poketes = [{
-    id: 0,
+    id: "0102345",
     price: 10000,
-    password: "pass"
+    password: "pass",
+    date: "2016/01/23",
+    limit: "2016/03/31"
   }, {
-    id: 1,
+    id: "0102449",
     price: 20000,
-    password: "pass"
+    password: "pass",
+    date: "2016/01/24",
+    limit: "2016/02/14"
   }, {
-    id: 2,
+    id: "0104410",
     price: 30000,
-    password: "pass"
+    password: "pass",
+    date: "2016/01/26",
+    limit: "2016/05/01"
   }];
 
   return {

@@ -20,4 +20,80 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-@import "./stocks.app";
+//@import "./stocks.app";
+
+
+.text-lg {
+  font-size: 1.8em;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.unenergized {
+  color: #999;
+}
+
+
+
+.pokete-card {
+  background-image: url("../img/paper.jpg");
+  //background-color: red:
+  padding: 10px;
+}
+.pokete-no {
+  font-weight: bold;
+}
+.pokete-title {
+  width: 100%;
+  //background-color: red;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+.pokete-price {
+  width: 100%;
+  //background-color: red;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.pokete-date {
+  //font-weight: bold;
+  width: 100%;
+  //background-color: red;
+  text-align: right;
+}
+.pokete-limit {
+  //font-weight: bold;
+  width: 100%;
+  //background-color: red;
+  text-align: right;
+}
+.pokete-qr {
+  //font-weight: bold;
+  height: 100px;
+  width: auto;
+  //margin-left: 100px;
+  //background-color: red;
+  text-align: right;
+}
+.pokete-sign {
+  //font-weight: bold;
+  height: 60px;
+  width: auto;
+  margin-left: 60px;
+  //background-color: red;
+  text-align: right;
+}
+.pokete-surugalogo {
+  //font-weight: bold;
+  height: 60px;
+  width: auto;
+  margin-left: 20px;
+  //background-color: red;
+  text-align: right;
+}
