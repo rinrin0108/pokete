@@ -21,6 +21,15 @@ angular.module('starter.controllers', [])
 .controller('QrreadSampleCtrl', function($scope) {
   console.log("Qrread", trend);
 })
+.controller('ManageAccountCtrl', function($scope) {
+  
+})
+.controller('ManagePasswordCtrl', function($scope) {
+  
+})
+.controller('ManageSignCtrl', function($scope) {
+  
+})
 
 /*
 .controller('DashCtrl', function($scope) {})
