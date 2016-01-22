@@ -114,8 +114,6 @@ angular.module('starter', [
     }
   })
 
-  ;
-
   .state('tab.manage-account', {
     url: '/manage-account',
     views: {
