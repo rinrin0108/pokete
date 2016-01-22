@@ -9740,6 +9740,14 @@ a.button {
 .unenergized {
   color: #999; }
 
+.background, .background .pane, .background .item, .background .item-complex .item-content {
+  background-color: #333; }
+
+.pokete-icon,
+.pokete-icon:before {
+  color: red;
+  font-size: 200px; }
+
 .pokete-card {
   background-image: url("../img/paper.jpg");
   padding: 10px; }
