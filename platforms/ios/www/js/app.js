@@ -10,7 +10,8 @@ angular.module('starter', [
   'starter.controllers',
   'starter.services',
   'starter.directives.star-rating',
-  'starter.directives.comments'
+  'starter.directives.comments',
+  'starter.directives.pokete-image'
 ])
 
 .run(function($ionicPlatform) {
@@ -44,17 +45,17 @@ angular.module('starter', [
     templateUrl: 'templates/tabs.html'
   })
 
-  .state('tab.trends', {
-    url: '/trends',
+  .state('tab.poketes', {
+    url: '/poketes',
     views: {
-      'tab-trends': {
-        templateUrl: 'templates/tab-trends.html',
-        controller: 'TrendsCtrl'
+      'tab-poketes': {
+        templateUrl: 'templates/tab-poketes.html',
+        controller: 'PoketesCtrl'
       }
     },
     resolve: {
-      trends: function(Trend) {
-        return Trend.all();
+      poketes: function(Pokete) {
+        return Pokete.all();
       }
     }
   })
@@ -94,9 +95,55 @@ angular.module('starter', [
     }
   })
 
-  ;
+  .state('tab.qrread', {
+    url: '/qrread',
+    views: {
+      'tab-qrread': {
+        templateUrl: 'templates/tab-qrread.html',
+        controller: 'QrreadCtrl'
+      }
+    }
+  })
 
+  .state('tab.qrread_sample', {
+    url: '/qrread_sample',
+    views: {
+      'tab-qrread_sample': {
+        templateUrl: 'templates/tab-qrread_sample.html',
+        controller: 'QrreadSampleCtrl'
+      }
+    }
+  })
+
+  .state('tab.manage-account', {
+    url: '/manage-account',
+    views: {
+      'tab-manage-account': {
+        templateUrl: 'templates/tab-manage-account.html',
+        controller: 'ManageAccountCtrl'
+      }
+    }
+  })
+  .state('tab.manage-password', {
+    url: '/manage-password',
+    views: {
+      'tab-manage-password': {
+        templateUrl: 'templates/tab-manage-password.html',
+        controller: 'ManagePasswordCtrl'
+      }
+    }
+  })
+  .state('tab.manage-sign', {
+    url: '/manage-sign',
+    views: {
+      'tab-manage-sign': {
+        templateUrl: 'templates/tab-manage-sign.html',
+        controller: 'ManageSignCtrl'
+      }
+    }
+  })
+  //
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/trends');
+  $urlRouterProvider.otherwise('/tab/poketes');
 
 });

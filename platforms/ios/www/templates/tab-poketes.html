@@ -1,0 +1,22 @@
+<ion-view view-title="手形一覧">
+  <ion-content class="background">
+    <br />
+    <div class="text-center">
+      <a class="button button-icon icon ion-plus-circled pokete-icon" ui-sref="addpokete"></a>
+    </div>
+
+    <div collection-repeat="pokete in poketes" class="">
+      <div class="card margin-bottom">
+        <div class="item item-text-wrap">
+          <pokete-image pokete="pokete"></pokete-image>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="text-center">
+      <a class="button button-icon icon ion-plus-circled pokete-icon" ui-sref="addpokete"></a>
+    </div>
+    <br />
+  </ion-content>
+</ion-view>
