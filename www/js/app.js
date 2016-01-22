@@ -118,9 +118,14 @@ angular.module('starter', [
   .state('tab.qrread_sample', {
     url: '/qrread_sample',
     views: {
-      'tab-qrread_sample': {
+      'tab-qrread': {
         templateUrl: 'templates/tab-qrread_sample.html',
         controller: 'QrreadSampleCtrl'
+      }
+    },
+    resolve: {
+      poketes: function(Pokete) {
+        return Pokete.all();
       }
     }
   })

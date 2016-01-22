@@ -23,17 +23,17 @@ angular.module('starter.controllers', [])
 .controller('QrreadCtrl', function($scope) {
 
 })
-.controller('QrreadSampleCtrl', function($scope) {
-  console.log("Qrread", trend);
+.controller('QrreadSampleCtrl', function($scope, poketes) {
+  $scope.poketes = poketes;
 })
 .controller('ManageAccountCtrl', function($scope) {
-  
+
 })
 .controller('ManagePasswordCtrl', function($scope) {
-  
+
 })
 .controller('ManageSignCtrl', function($scope) {
-  
+
 })
 .controller('UketesCtrl', function($scope) {
   
