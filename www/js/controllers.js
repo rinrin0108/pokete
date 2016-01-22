@@ -4,6 +4,11 @@ angular.module('starter.controllers', [])
   $scope.poketes = poketes;
   console.log("poketes", poketes);
 })
+.controller('AddPoketeCtrl', function($scope, $filter) {
+  $scope.date = $filter("date")(Date.now(), 'yyyy/MM/dd');
+  dt = $scope.date;
+  $scope.delidate = $filter("date")(dt, 'yyyy/MM/dd');
+})
 .controller('StockDetailCtrl', function($scope, trend) {
   $scope.trend = trend;
   console.log("trends", trend);
@@ -28,6 +33,9 @@ angular.module('starter.controllers', [])
   
 })
 .controller('ManageSignCtrl', function($scope) {
+  
+})
+.controller('UketesCtrl', function($scope) {
   
 })
 

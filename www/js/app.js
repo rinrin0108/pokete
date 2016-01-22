@@ -11,7 +11,8 @@ angular.module('starter', [
   'starter.services',
   'starter.directives.star-rating',
   'starter.directives.comments',
-  'starter.directives.pokete-image'
+  'starter.directives.pokete-image',
+  'starter.directives.pokete-image-add',
 ])
 
 .run(function($ionicPlatform) {
@@ -56,6 +57,15 @@ angular.module('starter', [
     resolve: {
       poketes: function(Pokete) {
         return Pokete.all();
+      }
+    }
+  })
+  .state('tab.addpokete', {
+    url: '/addpokete',
+    views: {
+      'tab-poketes': {
+        templateUrl: 'templates/tab-addpokete.html',
+        controller: 'AddPoketeCtrl'
       }
     }
   })
@@ -118,7 +128,7 @@ angular.module('starter', [
   .state('tab.manage-account', {
     url: '/manage-account',
     views: {
-      'tab-manage-account': {
+      'tab-account': {
         templateUrl: 'templates/tab-manage-account.html',
         controller: 'ManageAccountCtrl'
       }
@@ -127,7 +137,7 @@ angular.module('starter', [
   .state('tab.manage-password', {
     url: '/manage-password',
     views: {
-      'tab-manage-password': {
+      'tab-account': {
         templateUrl: 'templates/tab-manage-password.html',
         controller: 'ManagePasswordCtrl'
       }
@@ -136,12 +146,13 @@ angular.module('starter', [
   .state('tab.manage-sign', {
     url: '/manage-sign',
     views: {
-      'tab-manage-sign': {
+      'tab-account': {
         templateUrl: 'templates/tab-manage-sign.html',
         controller: 'ManageSignCtrl'
       }
     }
   })
+
   //
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/poketes');
