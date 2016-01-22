@@ -9802,3 +9802,17 @@ a.button {
   margin-top: 10px;
   margin-left: 300px;
   text-align: right; }
+
+.received-bill {
+  margin-top: 5px;
+  margin-bottom: 0px; }
+
+.processed-stamp {
+  width: 60%;
+  position: fixed;
+  right: -30px;
+  bottom: 40px; }
+
+.receive-password {
+  margin-top: 0px;
+  margin-bottom: 0px; }

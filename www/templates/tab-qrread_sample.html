@@ -1,3 +1,18 @@
-<ion-view view-title="手形QR読み込み">
-  <h3>Hello!</h3>
+<ion-view view-title="手形受取">
+  <ion-content>
+    <div class="card received-bill">
+      <div class="item-text-wrap">
+        <pokete-image pokete="poketes[0]"></pokete-image>
+        <img class="processed-stamp" src="img/processed.png">
+      </div>
+    </div>
+    <div class="item item-input-inset receive-password">
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="パスワード">
+      </label>
+      <button class="button button-small">
+        受取
+      </button>
+    </div>
+  </ion-content>
 </ion-view>
