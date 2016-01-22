@@ -3,7 +3,7 @@ angular.module('starter.controllers', [])
 .controller('TrendsCtrl', function($scope, trends) {
   $scope.trends = trends;
   console.log("trends", trends);
-  
+
 })
 .controller('StockDetailCtrl', function($scope, trend) {
   $scope.trend = trend;
@@ -11,10 +11,13 @@ angular.module('starter.controllers', [])
 
 })
 .controller('NewsCtrl', function($scope) {
-  
+
 })
 .controller('AccountCtrl', function($scope) {
-  
+
+})
+.controller('QrreadCtrl', function($scope) {
+  console.log("Qrread", trend);
 })
 
 /*
