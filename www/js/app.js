@@ -10,7 +10,8 @@ angular.module('starter', [
   'starter.controllers',
   'starter.services',
   'starter.directives.star-rating',
-  'starter.directives.comments'
+  'starter.directives.comments',
+  'starter.directives.pokete-image'
 ])
 
 .run(function($ionicPlatform) {

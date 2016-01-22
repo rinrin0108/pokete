@@ -1,4 +1,4 @@
-<ion-view view-title="注目株主優待">
+<ion-view view-title="手形一覧">
   <ion-content>
     <div class="text-center">
       <a class="button button-icon icon ion-plus-circled" ui-sref="addpokete"></a>
@@ -6,6 +6,7 @@
     <div collection-repeat="pokete in poketes" class="padding-bottom">
       <div class="card">
         <div class="item item-text-wrap">
+          <pokete-image pokete="pokete"></pokete-image>
           <h1>¥{{pokete.price}}</h1>
           sign+QR
           {{pokete}}
