@@ -1,9 +1,8 @@
 angular.module('starter.controllers', [])
 
-.controller('TrendsCtrl', function($scope, trends) {
-  $scope.trends = trends;
-  console.log("trends", trends);
-
+.controller('PoketesCtrl', function($scope, poketes) {
+  $scope.poketes = poketes;
+  console.log("poketes", poketes);
 })
 .controller('StockDetailCtrl', function($scope, trend) {
   $scope.trend = trend;
