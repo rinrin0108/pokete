@@ -9753,7 +9753,7 @@ a.button {
 .pokete-card {
   background-image: url("../img/paper.jpg");
   padding: 10px;
-  min-height: 250px; }
+  min-height: 270px; }
 
 .pokete-no {
   font-weight: bold; }
@@ -9775,42 +9775,69 @@ a.button {
   margin-top: 30px;
   margin-bottom: 10px; }
 
+.pokete-price-add {
+  width: 45%;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 2.8em;
+  letter-spacing: 0.3em;
+  position: fixed;
+  top: 65px;
+  left: 195px;
+  background: white !important; }
+
 .pokete-date {
-  width: 100%;
+  position: fixed;
+  top: 150px;
+  right: 30px;
   text-align: right; }
 
 .pokete-limit {
-  width: 100%;
+  position: fixed;
+  top: 170px;
+  right: 30px;
+  text-align: right; }
+
+.pokete-limit-add {
+  position: fixed;
+  top: 170px;
+  right: 105px;
+  text-align: right; }
+
+.pokete-limit-add-button {
+  position: fixed;
+  top: 160px;
+  right: 25px;
   text-align: right; }
 
 .pokete-from {
-  position: absolute;
-  margin-left: 175px; }
+  position: fixed;
+  left: 200px;
+  top: 170px; }
 
 .pokete-qr {
-  height: 100px;
-  width: auto;
-  text-align: right; }
-
-.pokete-qr-add {
+  position: fixed;
   height: 100px;
   width: auto;
   text-align: right;
-  position: fixed; }
+  top: 170px;
+  left: 30px; }
 
 .pokete-sign {
-  position: absolute;
+  position: fixed;
   height: 70px;
   width: auto;
-  margin-left: 120px;
-  margin-bottom: 30px;
+  left: 240px;
+  top: 170px;
   text-align: right; }
 
 .pokete-surugalogo {
+  position: fixed;
   height: 50px;
   width: auto;
-  margin-top: 10px;
-  margin-left: 270px;
+  right: 40px;
+  top: 230px;
   text-align: right; }
 
 .received-bill {
