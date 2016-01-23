@@ -64,7 +64,7 @@ angular.module('starter', [
   .state('tab.addpokete', {
     url: '/addpokete',
     views: {
-      'tab-poketes': {
+      'tab-addpokete': {
         templateUrl: 'templates/tab-addpokete.html',
         controller: 'AddPoketeCtrl'
       }
