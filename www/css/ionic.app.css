@@ -9741,7 +9741,7 @@ a.button {
   color: #999; }
 
 .background, .background .pane, .background .item, .background .item-complex .item-content {
-  background-image: url("../img/lether.jpg"); }
+  background-image: url("../img/leather.jpg"); }
 
 .qrread-image, .qrread-image .pane, .qrread-image .item, .qrread-image .item-complex .item-content {
   background-image: url("../img/qrread-image.jpg");
@@ -9862,13 +9862,15 @@ a.button {
   margin-bottom: 0px; }
 
 .account-menu {
+  background-image: url("../img/leather_red.jpg") !important;
   margin-top: 70px;
   margin-right: 5px;
   padding: -5px -5px -5px -5px;
-  background: #EEE !important;
   border-width: 2px;
-  border-radius: 10px;
-  height: 150px; }
+  border-radius: 30px;
+  border-color: #333;
+  height: 150px;
+  color: #122 !important; }
 
 .config-menu {
   background: #EEE !important;
