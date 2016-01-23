@@ -14,7 +14,17 @@
     </div>
   </div>
   <div class="pokete-date" ng-controller="AddPoketeCtrl">発行日 {{date}}</div>
-  <div class="pokete-limit" ng-controller="AddPoketeCtrl">受取期限 {{delidate}}</div>
+  <div class="pokete-limit" ng-controller="AddPoketeCtrl">
+    <div class="row" style="text-align:right;">
+      <div class="col-60"></div>
+      <div class="col-20" style="margin-left:40px;">受取期限</div>
+      <div class="col-20" style="margin-top:-20px;">
+        <ionic-datepicker input-obj="datepickerObject">
+        <button style="font-size:10pt;width:80%;padding:0 0 0 0;" class="button button-small button-light button-block button-positive"> {{datepickerObject.inputDate | date:datepickerObject.dateFormat}}</button>
+        </ionic-datepicker>
+      </div>
+    </div>
+  </div>
   <img class="pokete-qr" src="img/qr.gif">
   <img class="pokete-sign" src="img/sign.png">
   <img class="pokete-surugalogo" src="img/surugalogo.png">

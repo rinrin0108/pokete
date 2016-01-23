@@ -13,6 +13,7 @@ angular.module('starter', [
   'starter.directives.comments',
   'starter.directives.pokete-image',
   'starter.directives.pokete-image-add',
+  'ionic-datepicker'
 ])
 
 .run(function($ionicPlatform) {

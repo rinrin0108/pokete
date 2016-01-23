@@ -8,6 +8,38 @@ angular.module('starter.controllers', [])
   $scope.date = $filter("date")(Date.now(), 'yyyy/MM/dd');
   dt = $scope.date;
   $scope.delidate = $filter("date")(dt, 'yyyy/MM/dd');
+
+  $scope.datepickerObject = {
+    titleLabel: 'Title',  //Optional
+    todayLabel: 'Today',  //Optional
+    closeLabel: 'Close',  //Optional
+    setLabel: 'Set',  //Optional
+    setButtonType : 'button-assertive',  //Optional
+    todayButtonType : 'button-assertive',  //Optional
+    closeButtonType : 'button-assertive',  //Optional
+    inputDate: new Date(),  //Optional
+    mondayFirst: true,  //Optional
+    disabledDates: [], //Optional
+    weekDaysList: ["Sun", "Mon", "Tue", "Wed", "thu", "Fri", "Sat"], //Optional
+    monthList: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], //Optional
+    templateType: 'popup', //Optional
+    showTodayButton: 'true', //Optional
+    modalHeaderColor: 'bar-positive', //Optional
+    modalFooterColor: 'bar-positive', //Optional
+    from: new Date(2012, 8, 2), //Optional
+    to: new Date(2018, 8, 25),  //Optional
+    callback: datePickerCallback = function (val) {
+      if (typeof(val) === 'undefined') {
+        console.log('No date selected');
+      } else {
+        console.log('Selected date is : ', val);
+        $scope.datepickerObject.inputDate = val;
+      }
+    },
+//    dateFormat: 'dd-MM-yyyy', //Optional
+    dateFormat: 'yyyy/MM/dd', //Optional
+    closeOnSelect: false, //Optional
+  };
 })
 .controller('StockDetailCtrl', function($scope, trend) {
   $scope.trend = trend;
