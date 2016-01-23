@@ -9747,9 +9747,13 @@ a.button {
 .pokete-icon:before {
   color: red; }
 
+.card-height {
+  height: 265px; }
+
 .pokete-card {
   background-image: url("../img/paper.jpg");
-  padding: 10px; }
+  padding: 10px;
+  min-height: 250px; }
 
 .pokete-no {
   font-weight: bold; }
@@ -9788,6 +9792,12 @@ a.button {
   width: auto;
   text-align: right; }
 
+.pokete-qr-add {
+  height: 100px;
+  width: auto;
+  text-align: right;
+  position: fixed; }
+
 .pokete-sign {
   position: absolute;
   height: 70px;
@@ -9800,7 +9810,7 @@ a.button {
   height: 50px;
   width: auto;
   margin-top: 10px;
-  margin-left: 300px;
+  margin-left: 270px;
   text-align: right; }
 
 .received-bill {

@@ -4,6 +4,16 @@ angular.module('starter.controllers', [])
   $scope.poketes = poketes;
   console.log("poketes", poketes);
 })
+.controller('AddPoketeCtrl', function($scope, $filter) {
+  $scope.date = $filter("date")(Date.now(), 'yyyy/MM/dd');
+  dt = $scope.date;
+  $scope.delidate = $filter("date")(dt, 'yyyy/MM/dd');
+
+  $scope.show = false;
+  $scope.onTap = function() {
+    $scope.show = true;
+  };
+})
 .controller('StockDetailCtrl', function($scope, trend) {
   $scope.trend = trend;
   console.log("trends", trend);
@@ -18,17 +28,24 @@ angular.module('starter.controllers', [])
 .controller('QrreadCtrl', function($scope) {
 
 })
-.controller('QrreadSampleCtrl', function($scope) {
-  console.log("Qrread", trend);
+.controller('QrreadSampleCtrl', function($scope, poketes) {
+  $scope.poketes = poketes;
+  $scope.show = false;
+  $scope.onTap = function() {
+        $scope.show = true;
+    };
 })
 .controller('ManageAccountCtrl', function($scope) {
-  
+
 })
 .controller('ManagePasswordCtrl', function($scope) {
-  
+
 })
 .controller('ManageSignCtrl', function($scope) {
-  
+
+})
+.controller('UketesCtrl', function($scope) {
+
 })
 
 /*

@@ -9,9 +9,9 @@ angular.module('starter.controllers', [])
   dt = $scope.date;
   $scope.delidate = $filter("date")(dt, 'yyyy/MM/dd');
 
-  $scope.showQRCode = false;
+  $scope.show = false;
   $scope.onTap = function() {
-    $scope.showQRCode = true;
+    $scope.show = true;
   };
 })
 .controller('StockDetailCtrl', function($scope, trend) {
