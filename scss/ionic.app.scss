@@ -39,6 +39,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   background-image: url("../img/lether.jpg");
 }
 
+.qrread-image, .qrread-image .pane, .qrread-image .item, .qrread-image .item-complex .item-content{
+  background-image: url("../img/qrread-image.jpg");
+  background-size:cover;
+}
+
 .pokete-icon,
 .pokete-icon:before {
   color: red;
