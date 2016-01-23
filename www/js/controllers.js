@@ -4,7 +4,7 @@ angular.module('starter.controllers', [])
   $scope.poketes = poketes;
   console.log("poketes", poketes);
 })
-.controller('AddPoketeCtrl', function($scope, $filter) {
+.controller('AddPoketeCtrl', function($scope, $filter, $ionicPopup, $state) {
   $scope.date = $filter("date")(Date.now(), 'yyyy/MM/dd');
   dt = $scope.date;
   $scope.delidate = $filter("date")(dt, 'yyyy/MM/dd');
@@ -43,6 +43,21 @@ angular.module('starter.controllers', [])
   $scope.show = false;
   $scope.onTap = function() {
     $scope.show = true;
+    var confirmPopup = $ionicPopup.confirm({
+      title: '手形の作成が完了しました',
+      template: 'あなたの口座から' + $scope.$$childTail.price + '円が引き落とされました。<br><br>発行した手形のQRコードとパスワードをお取引先にご連絡ください。',
+      okText: '確認',
+      cancelText: 'キャンセル'
+    });
+
+    confirmPopup.then(function(res) {
+      if(res) {
+        $state.go('tab.poketes');
+        console.log('You are sure');
+      } else {
+        console.log('You are not sure');
+      }
+    });
   }
 })
 /*
@@ -70,7 +85,9 @@ angular.module('starter.controllers', [])
         $scope.show = true;
         var confirmPopup = $ionicPopup.confirm({
           title: '手形の受取が完了しました',
-          template: 'あなたの口座に' + $scope.poketes[0].price + "円が振り込まれました。"
+          template: 'あなたの口座に' + $scope.poketes[0].price + "円が振り込まれました。",
+          okText: '確認',
+          cancelText: 'キャンセル'
         });
 
         confirmPopup.then(function(res) {
