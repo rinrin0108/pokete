@@ -9,7 +9,6 @@ angular.module('starter.controllers', [])
   dt = $scope.date;
   $scope.delidate = $filter("date")(dt, 'yyyy/MM/dd');
 
-<<<<<<< HEAD
   $scope.datepickerObject = {
     titleLabel: 'Title',  //Optional
     todayLabel: 'Today',  //Optional
@@ -40,12 +39,11 @@ angular.module('starter.controllers', [])
 //    dateFormat: 'dd-MM-yyyy', //Optional
     dateFormat: 'yyyy/MM/dd', //Optional
     closeOnSelect: false, //Optional
-=======
+  };
   $scope.show = false;
   $scope.onTap = function() {
     $scope.show = true;
->>>>>>> e7d263d10d0bc762a040f253bb0776248eea3814
-  };
+  }
 })
 .controller('StockDetailCtrl', function($scope, trend) {
   $scope.trend = trend;
