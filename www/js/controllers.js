@@ -25,6 +25,10 @@ angular.module('starter.controllers', [])
 })
 .controller('QrreadSampleCtrl', function($scope, poketes) {
   $scope.poketes = poketes;
+  $scope.show = false;
+  $scope.onTap = function() {
+        $scope.show = true;
+    };
 })
 .controller('ManageAccountCtrl', function($scope) {
 
@@ -36,7 +40,7 @@ angular.module('starter.controllers', [])
 
 })
 .controller('UketesCtrl', function($scope) {
-  
+
 })
 
 /*
