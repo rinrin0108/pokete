@@ -181,6 +181,18 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   margin-bottom:0px;
 }
 .account-menu {
+  margin-top: 70px;
+  margin-right: 5px;
+  padding: -5px -5px -5px -5px;
   background: #EEE !important;
   border-width: 2px;
+  border-radius: 10px;
+  height: 150px;
+}
+.account-menu-button {
+  text-align: center;
+  margin-top: 15px;
+}
+.account-menu-button .icon{
+  font-size: 80px;
 }

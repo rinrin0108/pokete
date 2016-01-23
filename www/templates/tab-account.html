@@ -1,18 +1,27 @@
 <ion-view view-title="アカウント設定">
   <ion-content class="padding background">
-  <ul class="list">
-    <a class="item item-icon-left account-menu" ui-sref="tab.manage-account">
-      <i class="icon ion-person"></i>
-      口座管理
+  <div class="row account-menus">
+    <a class="col col-33 item account-menu" ui-sref="tab.manage-account">
+      <div class="account-menu-button">
+        <i class="icon ion-person"></i>
+        <br>
+        <span>口座管理</span>
+      </div>
     </a>
-    <a class="item item-icon-left account-menu" ui-sref="tab.manage-sign">
-      <i class="icon ion-paintbrush"></i>
-      署名管理
+    <a class="col col-33 item account-menu" ui-sref="tab.manage-sign">
+      <div class="account-menu-button">
+        <i class="icon ion-paintbrush"></i>
+        <br>
+        <span>署名管理</span>
+      </div>
     </a>
-    <a class="item item-icon-left account-menu">
-      <i class="icon ion-information-circled"></i>
-      このアプリについて
+    <a class="col col-33 item account-menu">
+      <div class="account-menu-button">
+        <i class="icon ion-information-circled"></i>
+        <br>
+        <span>このアプリについて</span>
+      </div>
     </a>
-  </ul>
+  </div>
   </ion-content>
 </ion-view>
