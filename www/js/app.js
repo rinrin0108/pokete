@@ -71,6 +71,7 @@ angular.module('starter', [
     }
   })
 
+/*
   .state('tab.stock-detail', {
     url: '/stocks/:id',
     views: {
@@ -85,7 +86,8 @@ angular.module('starter', [
       }
     }
   })
-
+  */
+/*
   .state('tab.news', {
     url: '/news',
     views: {
@@ -95,7 +97,7 @@ angular.module('starter', [
       }
     }
   })
-
+*/
   .state('tab.account', {
     url: '/account',
     views: {

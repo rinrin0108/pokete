@@ -45,14 +45,18 @@ angular.module('starter.controllers', [])
     $scope.show = true;
   }
 })
+/*
 .controller('StockDetailCtrl', function($scope, trend) {
   $scope.trend = trend;
   console.log("trends", trend);
 
 })
+*/
+/*
 .controller('NewsCtrl', function($scope) {
 
 })
+*/
 .controller('AccountCtrl', function($scope) {
 
 })
