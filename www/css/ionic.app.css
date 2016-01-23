@@ -9853,3 +9853,7 @@ a.button {
 .receive-password {
   margin-top: 0px;
   margin-bottom: 0px; }
+
+.account-menu {
+  background: #EEE !important;
+  border-width: 2px; }

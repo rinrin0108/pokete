@@ -63,12 +63,26 @@ angular.module('starter.controllers', [])
 .controller('QrreadCtrl', function($scope) {
 
 })
-.controller('QrreadSampleCtrl', function($scope, poketes) {
+.controller('QrreadSampleCtrl', function($scope, poketes, $ionicPopup, $state) {
   $scope.poketes = poketes;
   $scope.show = false;
   $scope.onTap = function() {
         $scope.show = true;
-    };
+        var confirmPopup = $ionicPopup.confirm({
+          title: '手形の受取が完了しました',
+          template: 'あなたの口座に' + $scope.poketes[0].price + "円が振り込まれました。"
+        });
+
+        confirmPopup.then(function(res) {
+          if(res) {
+            $state.go('tab.poketes');
+            console.log('You are sure');
+          } else {
+            console.log('You are not sure');
+          }
+        });
+  };
+
 })
 .controller('ManageAccountCtrl', function($scope) {
 
