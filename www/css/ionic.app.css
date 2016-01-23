@@ -9791,6 +9791,9 @@ a.button {
   left: 195px;
   background: white !important; }
 
+.pokete-price-add input {
+  font-size: 30px; }
+
 .pokete-date {
   position: fixed;
   top: 150px;
