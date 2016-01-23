@@ -13,6 +13,7 @@ angular.module('starter', [
   'starter.directives.comments',
   'starter.directives.pokete-image',
   'starter.directives.pokete-image-add',
+  'ionic-datepicker'
 ])
 
 .run(function($ionicPlatform) {
@@ -63,13 +64,14 @@ angular.module('starter', [
   .state('tab.addpokete', {
     url: '/addpokete',
     views: {
-      'tab-poketes': {
+      'tab-addpokete': {
         templateUrl: 'templates/tab-addpokete.html',
         controller: 'AddPoketeCtrl'
       }
     }
   })
 
+/*
   .state('tab.stock-detail', {
     url: '/stocks/:id',
     views: {
@@ -84,7 +86,8 @@ angular.module('starter', [
       }
     }
   })
-
+  */
+/*
   .state('tab.news', {
     url: '/news',
     views: {
@@ -94,7 +97,7 @@ angular.module('starter', [
       }
     }
   })
-
+*/
   .state('tab.account', {
     url: '/account',
     views: {
