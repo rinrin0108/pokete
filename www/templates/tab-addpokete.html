@@ -8,7 +8,7 @@
           <div class="pokete-price">
             ¥___________
             <div class="item item-input pokete-price-add">
-              <input class="text-center" type="text" placeholder="金額を入力" ng-model="price">
+              <input class="text-center" type="text" placeholder="金額を入力">
             </div>
           </div>
           <div class="pokete-date" ng-controller="AddPoketeCtrl">発行日 {{date}}</div>
@@ -25,8 +25,8 @@
         </div>
       </div>
     </div>
-    <div class="item item-input-inset receive-password">
-      <label class="item-input-wrapper">
+    <div class="item item-input-inset receive-password icon icon-left ion-unlocked" style="font-size: 30px; color: #999933;">
+      <label class="item-input-wrapper" style="margin-left: 8px;">
         <input type="password" placeholder="受取パスワードを入力">
       </label>
       <button on-tap="onTap()" class="button button-small" ng-click="showno=true">
