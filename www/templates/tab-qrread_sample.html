@@ -3,14 +3,14 @@
     <div class="card received-bill">
       <div class="item-text-wrap">
         <pokete-image pokete="poketes[0]"></pokete-image>
-        <img class="processed-stamp" src="img/processed.png">
+        <img class="processed-stamp" src="img/processed.png" ng-show="show">
       </div>
     </div>
     <div class="item item-input-inset receive-password">
       <label class="item-input-wrapper">
-        <input type="text" placeholder="受取パスワードを入力">
+        <input type="password" placeholder="受取パスワードを入力">
       </label>
-      <button class="button button-small">
+      <button on-tap="onTap()" class="button button-small">
         受取
       </button>
     </div>
