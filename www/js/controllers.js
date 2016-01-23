@@ -8,6 +8,11 @@ angular.module('starter.controllers', [])
   $scope.date = $filter("date")(Date.now(), 'yyyy/MM/dd');
   dt = $scope.date;
   $scope.delidate = $filter("date")(dt, 'yyyy/MM/dd');
+
+  $scope.showQRCode = false;
+  $scope.onTap = function() {
+    $scope.showQRCode = true;
+  };
 })
 .controller('StockDetailCtrl', function($scope, trend) {
   $scope.trend = trend;
@@ -36,7 +41,7 @@ angular.module('starter.controllers', [])
 
 })
 .controller('UketesCtrl', function($scope) {
-  
+
 })
 
 /*
