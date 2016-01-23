@@ -44,10 +44,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   color: red;
 }
 
+.card-height {
+  height: 265px;
+}
+
 .pokete-card {
   background-image: url("../img/paper.jpg");
   //background-color: red:
   padding: 10px;
+  min-height: 250px;
 }
 .pokete-no {
   font-weight: bold;
@@ -95,6 +100,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   //background-color: red;
   text-align: right;
 }
+.pokete-qr-add {
+  //font-weight: bold;
+  height: 100px;
+  width: auto;
+  //margin-left: 100px;
+  //background-color: red;
+  text-align: right;
+  position: fixed;
+}
 .pokete-sign {
   //font-weight: bold;
   position: absolute;
@@ -110,7 +124,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   height: 50px;
   width: auto;
   margin-top: 10px;
-  margin-left: 300px;
+  margin-left: 270px;
   //background-color: red;
   text-align: right;
 }
