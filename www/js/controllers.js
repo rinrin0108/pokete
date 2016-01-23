@@ -85,7 +85,7 @@ angular.module('starter.controllers', [])
         $scope.show = true;
         var confirmPopup = $ionicPopup.confirm({
           title: '手形の受取が完了しました',
-          template: 'あなたの口座に' + $scope.poketes[0].price + "円が振り込まれました。",
+          template: 'あなたの口座に' + $scope.poketes[2].price + "円が振り込まれました。",
           okText: '確認',
           cancelText: 'キャンセル'
         });
